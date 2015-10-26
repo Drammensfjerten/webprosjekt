@@ -1,3 +1,3 @@
 # webprosjekt
 
-Dette er webprosjektoppgaven til Robin, Anton , Mathias og Steffen. Aka Team awsome
+Dette er webprosjektoppgaven til Robin, Anton , Mathias og Steffen. Aka Team awsome aka worldstars
