@@ -1,0 +1,350 @@
+
+
+body{
+    background-color: #F2F2F2;
+    font-size: 100%;
+    /*en grei regel er å ha en minimumsgrense på 16px (eller 1em ved 100% body font-size).*/
+    /*linje avstand*/
+    text-align: left;
+    /*er vell default, men gjør at all tekst starter fra venstre*/
+    margin: 0 auto;
+    color: dimgrey;
+}
+
+a{
+    text-decoration: none;
+    /*ingen strek under linker osv, dekorering gjør vi selv!*/
+}
+
+                                    /*/!*Delen under er for styling av navigasjon og logo*!/*/
+.headertop img{
+    /*background-color: white;*/
+    /*padding: 20px 25px;*/
+    margin: 1.5% 1.5%;
+}
+
+.headertop nav{
+    background-color: white;
+    height: 40px;
+}
+
+.headertop nav ul{
+    /*redigere hele den usorterte liste*/
+    list-style: none;
+    /*fjerner dottene fra listen*/
+    margin: 0 auto;
+    /*kan hende denne er unødvendig*/
+}
+
+.headertop nav li{
+    /*redigere liste elementene*/
+    float: right;
+    /*vi ønsker å ha navigasjonen fra høyre*/
+    display: inline;
+    /*gjør navigasjonen til en linje*/
+}
+
+.headertop ul a:link, .headertop ul a:visited{
+    /*redigere hvordan linkene oppførerer seg*/
+    color: dimgrey;
+    /*fargen på navigasjonen*/
+    display: inline-block;
+    /*husker ikke helt, men tror den midtstiller?*/
+    padding: 10px 25px;
+    /*dette gir en smud avstand mellom hver link*/
+    height: 20px;
+}
+
+.headertop ul a:hover{
+    /*effekt når du tar musen over;)*/
+    background-color: mediumaquamarine;
+    color: white;
+}
+
+.headertop .active a:link, .headertop .active a:visited{
+    /*gjelder kun den aktive linken i navigasjonen*/
+    color: white;
+    background-color:  mediumaquamarine;
+}
+
+.headertop ul li a{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /*dette gir støtte til mozilla og webkite
+    - dette styler navigasjon borderen til å bli rund*/
+}
+
+                                        /*/!*Delen under er for styling av seksjonene*!/*/
+#content{
+    float:left;
+    line-height: 25px;
+}
+
+#maincontent{
+    background-color: #EFEDE7;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /*gjør slik at det blir kompatibelt med webkits og firefox*/
+    padding: 2% 3%;
+    height: 600px;
+    /*hvor stor boksen skal være*/
+}
+
+#maincontent > h2{
+    margin-top:200px;
+    margin-left:50px;
+}
+
+#maincontent > p{
+    margin-left:50px;
+}
+
+#maincontent > .phone{
+    width: 43%;
+    float: right;
+    /*bilde til høyre*/
+}
+                        /*/!*Delen under er for styling av section, men var såpass stor at jeg velger
+                        å informere om at den tar av seg Learn more og Download knappen*!/*/
+
+
+#maincontent > #download{
+    opacity: 1;
+    background: #428BCA;
+    font-size: 2em;
+    width: 51%;
+    line-height: 60px;
+    margin: 20px 50px;
+    text-align: center;
+    border: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#maincontent > #download a:link, a:visited{
+    color: #fff;
+}
+
+#maincontent #download:hover {
+    opacity: 0.75;
+}
+
+#maincontent > #learnmore{
+    opacity: 1;
+    background: lightseagreen;
+    font-size: 2em;
+    width: 51%;
+    line-height: 60px;
+    margin: 20px 50px;
+    text-align: center;
+    border: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#maincontent > #learnmore a:link, a:visited{
+    color: #fff;
+}
+
+#maincontent #learnmore:hover {
+    opacity: 0.75;
+}
+
+
+                                    /*/!*Delen under er for styling av footern*!/*/
+#footer-wrapper {
+    width: 98%;
+    float: left;
+    background-color: #4C5365;
+    padding: 3% 2%;
+    height: 130px;
+    color: white;
+}
+
+
+#footer-copyright {
+    width: 98%;
+    float: left;
+    background-color: #444B5D;
+    padding: 3% 2%;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 150px) and (max-width: 1050px){
+
+    .headertop img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headertop nav{
+        background-color: white;
+        height: 160px;
+    }
+
+    .headertop nav li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .headertop ul a:link, .headertop ul a:visited{
+        /*redigere hvordan linkene oppførerer seg*/
+        color: dimgrey;
+        /*fargen på navigasjonen*/
+        display: list-item;
+        /*husker ikke helt, men tror den midtstiller?*/
+        padding: 10px 25px;
+        /*dette gir en smud avstand mellom hver link*/
+        height: 20px;
+    }
+
+    .headertop ul a:hover{
+        /*effekt når du tar musen over;)*/
+        background-color: mediumaquamarine;
+        color: white;
+    }
+
+    .headertop .active a:link, .headertop .active a:visited{
+        /*gjelder kun den aktive linken i navigasjonen*/
+        color: white;
+        background-color:  mediumaquamarine;
+    }
+
+    .headertop ul li a{
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        /*dette gir støtte til mozilla og webkite
+        - dette styler navigasjon borderen til å bli rund*/
+    }
+
+    /*/!*Delen under er for styling av seksjonene*!/*/
+    #content{
+        float:left;
+        line-height: 25px;
+    }
+
+    #maincontent{
+        background-color: #EFEDE7;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        /*gjør slik at det blir kompatibelt med webkits og firefox*/
+        padding: 2% 3%;
+        height: 600px;
+        /*hvor stor boksen skal være*/
+    }
+
+    #maincontent > h2{
+        margin-top:200px;
+        margin-left:50px;
+    }
+
+    #maincontent > p{
+        margin-left:50px;
+    }
+
+    #maincontent > .phone{
+        width: 100%;
+        float: right;
+        /*bilde til høyre*/
+    }
+    /*/!*Delen under er for styling av section, men var såpass stor at jeg velger
+    å informere om at den tar av seg Learn more og Download knappen*!/*/
+
+
+    #maincontent > #download{
+        opacity: 1;
+        background: #428BCA;
+        font-size: 2em;
+        width: 51%;
+        line-height: 60px;
+        margin: 20px 50px;
+        text-align: center;
+        border: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    #maincontent > #download a:link, a:visited{
+        color: #fff;
+    }
+
+    #maincontent #download:hover {
+        opacity: 0.75;
+    }
+
+    #maincontent > #learnmore{
+        opacity: 1;
+        background: lightseagreen;
+        font-size: 2em;
+        width: 51%;
+        line-height: 60px;
+        margin: 20px 50px;
+        text-align: center;
+        border: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    #maincontent > #learnmore a:link, a:visited{
+        color: #fff;
+    }
+
+    #maincontent #learnmore:hover {
+        opacity: 0.75;
+    }
+
+
+    /*/!*Delen under er for styling av footern*!/*/
+    #footer-wrapper {
+        width: 100%;
+        float: left;
+        background-color: #4C5365;
+        height: 130px;
+        color: white;
+    }
+
+    #footer-copyright {
+        width: 100%;
+        background-color: #444B5D;
+        height: 30px;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
